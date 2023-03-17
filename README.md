@@ -67,4 +67,19 @@ CREATE INDEX idx_points_user_id ON points (user_id); -- points
 
 SHOW INDEX FROM orders;
 SHOW INDEX FROM points;
+
+INSERT INTO menus (menu_name, price) VALUES ("아메리카노(ICE)", 2000);
+INSERT INTO menus (menu_name, price) VALUES ("아메리카노(HOT)", 1500);
+INSERT INTO menus (menu_name, price) VALUES ("콜드브루", 3000);
+INSERT INTO menus (menu_name, price) VALUES ("카페라떼", 2500);
+INSERT INTO menus (menu_name, price) VALUES ("몬테카를로", 8000);
+
+INSERT INTO users (user_name) VALUES ("1man");
+INSERT INTO users (user_name) VALUES ("2man");
+INSERT INTO users (user_name) VALUES ("3man");
+INSERT INTO users (user_name) VALUES ("4man");
+INSERT INTO users (user_name) VALUES ("5man");
+
+select * from menus;
+select * from users;
 ```
